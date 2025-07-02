@@ -7,7 +7,7 @@ import { Menu } from './components/Menu';
 import './App.css';
 
 const App = () => {
-  const [watershed, setWatershed] = useState<Feature | null>(null);
+  const [watershed, setWatershed] = useState<Feature | null | any>(null);
   const [error, setError] = useState<string | null>(null);
 
   const handleShapeComplete = async (geometry: Feature) => {
