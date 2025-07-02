@@ -11,6 +11,32 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+    --brand-600: #137333;  /* darker  */
+  --brand-500: #2e7d32;  /* primary */
+  --brand-100: #e8f6ea;  /* tint    */
+
+  /* Neutrals */
+  --gray-900: #1f1f1f;
+  --gray-700: #4b4b4b;
+  --gray-200: #ebebeb;
+  --gray-050: #fafafa;
+
+  /* UI */
+  --bg-page: #ffffff;
+  --bg-surface: var(--gray-050);
+  --border: var(--gray-200);
+  --text-strong: var(--gray-900);
+  --text-body: var(--gray-700);
+  --focus-ring: #3b99fc;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-page: #121212;
+    --bg-surface: #1e1e1e;
+    --border: #2b2b2b;
+    --text-strong: #f0f0f0;
+    --text-body: #c0c0c0;
+  }
 }
 /*
 a {
