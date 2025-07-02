@@ -1,0 +1,60 @@
+:root {
+  --green: #2e7d32;
+  --green-light: #e8f6ea;
+}
+
+.menu {
+  /* background: #fafafa;
+  border: 1px solid #ddd; */
+  border-radius: 6px;
+  min-width: 200px;
+  padding: 1rem 1.25rem;
+}
+
+.menu h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.menu-list {
+  display: grid;
+  gap: 0.75rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-btn,
+.menu-link {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 0.55rem 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--green);
+  background: #fff;
+  border: 1.6px solid var(--green);
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+  height: 42px;
+}
+
+.menu-btn:hover:not(:disabled),
+.menu-link:hover {
+  background: var(--green-light);
+}
+
+.menu-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* Optional global reset (prevents similar issues everywhere)
+*, *::before, *::after {
+  box-sizing: border-box;
+} */
